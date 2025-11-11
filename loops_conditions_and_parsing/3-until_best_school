@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 #This sript prints Best School for 10 times
-x=1; until [ $x == 10 ]; do echo "Best School"; x=$(( x + 1 )); done
+x=1; until [ $x == 11 ]; do echo "Best School"; x=$(( x + 1 )); done

@@ -1,0 +1,17 @@
+#!/usr/bin/env bash 
+#if elif else
+x=1
+while [ $x -le 10 ]; do
+
+ echo "$x"
+ 
+  case $x in
+  "4") echo "bad luck from China"
+  ;;
+  "9") echo "bad luck from Japan"
+  ;;
+  "17") echo "bad luck from Italy"
+  ;;
+  esac
+  x=$((x+1))
+  done 

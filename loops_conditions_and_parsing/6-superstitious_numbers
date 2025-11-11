@@ -1,7 +1,7 @@
 #!/usr/bin/env bash 
 #if elif else
 x=1
-while [ $x -le 10 ]; do
+while [ $x -le 20 ]; do
 
  echo "$x"
  

@@ -1,4 +1,5 @@
 #!/bin/bash
+# this script shows files without -
 for ITEM in *; do
 echo "${ITEM#*-}"
 done

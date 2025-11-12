@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #using nested if and checkfile with this script
-FILE="school"
+FILE="/root/holbertonschool-shell/loops_conditions_and_parsing/school"
 if [ -e "$FILE" ]; then
 	if [ -d "$FILE" ]; then
 		echo "school exists but its a directory"
@@ -12,5 +12,5 @@ if [ -e "$FILE" ]; then
 		fi
 	fi
 else 
-	echo "File does not exist"
+	echo "school does not exist"
 fi

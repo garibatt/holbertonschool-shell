@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # comment line
 while IFS=: read -r user pass uid gid comment home shell; do
   echo "Username: $user"

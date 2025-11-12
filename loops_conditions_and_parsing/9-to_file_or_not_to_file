@@ -1,17 +1,16 @@
 #!/usr/bin/env bash
 #using nested if and checkfile with this script
-FILE="/school"
-
-if [ -e "$FILE" ]; then 
-	echo "File exist"
-	if [ -f "$FILE" ]; then
-		echo "File is regular"
+FILE="/root/holbertonschool-shell/loops_conditions_and_parsing/school"
+if [ -e "$FILE" ]; then
+	if [ -d "$FILE" ]; then
+		echo "school exists but its a directory"
+	elif [ -f "$FILE" ]; then
 		if [ -s "$FILE" ]; then
-			echo "File is not empty"
-	else 
-		echo "File is empty"
+			echo "File exist and is a regular file"
+		else 
+			echo "school exists but empty"
+		fi
 	fi
-	else 
-		echo "File does not exist"
-	fi
+else 
+	echo "File does not exist"
 fi

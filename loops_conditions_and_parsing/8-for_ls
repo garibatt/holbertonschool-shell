@@ -1,0 +1,4 @@
+#!/bin/bash
+for ITEM in *; do
+echo "${ITEM#*-}"
+done

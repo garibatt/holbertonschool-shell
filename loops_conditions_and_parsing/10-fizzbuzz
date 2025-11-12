@@ -1,12 +1,14 @@
 #!/usr/bin/env bash
-#salam
+# FizzBuzz script
 for i in {1..100}; do
-echo $i
-if ((i%3==0 && i%5==0)); then
-echo "FizzBuzz"
-elif ((i%3==0));then
-echo "Fizz"
-elif ((i%5==0));then
-echo "Bizz"
-fi
+  if ((i % 3 == 0 && i % 5 == 0)); then
+    echo "FizzBuzz"
+  elif ((i % 3 == 0)); then
+    echo "Fizz"
+  elif ((i % 5 == 0)); then
+    echo "Buzz"
+  else
+    echo "$i"
+  fi
 done
+

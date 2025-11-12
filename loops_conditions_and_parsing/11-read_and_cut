@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
-# comment line
-while IFS=: read -r user _ uid _ _ home _; do
-  echo "Username: $user"
-  echo "User ID: $uid"
-  echo "Home Directory: $home"
-done < /etc/passwd
+# read /etc/passwd and show username, user id and home directory
 
+while IFS=: read -r user _ uid _ _ home _; do
+  echo "$user:$uid:$home"
+done < /etc/passwd

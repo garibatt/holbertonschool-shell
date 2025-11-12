@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#using nested if and checkfile with this script
+FILE="/root/holbertonschool-shell/loops_conditions_and_parsing/school"
+
+if [ -e "$FILE" ]; then 
+	echo "File exist"
+	if [ -f "$FILE" ]; then
+		echo "File is regular"
+		if [ -s "$FILE" ]; then
+			echo "File is not empty"
+	else 
+		echo "File is empty"
+	fi
+	else 
+		echo "File does not exist"
+	fi
+fi

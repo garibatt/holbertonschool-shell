@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # comment line
-while IFS=: read -r user pass uid gid comment home shell; do
+while IFS=: read -r user _ uid _ _ home _; do
   echo "Username: $user"
   echo "User ID: $uid"
   echo "Home Directory: $home"

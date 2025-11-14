@@ -1,0 +1,3 @@
+#!/usr/bin/env bash 
+#this is script
+pgrep -l bash

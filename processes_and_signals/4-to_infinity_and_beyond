@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+#this script prints sentecne  infinity
 while true
 do
     echo "To infinity and beyond"

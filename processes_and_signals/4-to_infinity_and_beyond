@@ -1,8 +1,7 @@
-#!/usr/bin/env bash 
-#this is script
-i = 0 
-while [$i -le 10];
+#!/usr/bin/env bash
+
+while true
 do
-echo "To infinity and beyond"
-sleep 2
+    echo "To infinity and beyond"
+    sleep 2
 done

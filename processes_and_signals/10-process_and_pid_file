@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#This is script for process
+echo $$ > /var/run/myscript.pid
+trap 'echo "Y U no love me?!"' SIGINT
+trap 'echo "I hate the kill command"; rm -rf /var/run/myscript.pid ' SIGTERM
+trap 'rm -rf  /var/run/myscript.pid;exit'  SIGQUIT
+while true; do
+	echo "To infinity and beyond"
+done 
